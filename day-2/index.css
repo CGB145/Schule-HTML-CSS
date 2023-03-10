@@ -1,0 +1,31 @@
+body{
+
+    margin: 0;
+    overflow: hidden;
+
+}
+
+
+.container{
+    height: 95vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(10,10%);
+    grid-template-rows: repeat(10,10%);
+    /* grid-gap: 0.1rem; */
+
+}
+
+h1{
+
+    position: absolute;
+    color: white;
+
+}
+
+.container div{
+
+    background-color: green;
+
+
+}
