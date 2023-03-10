@@ -1,0 +1,67 @@
+body{
+
+    background-image: url("../Bilder/martin-bennie-J__8kyvrx8E-unsplash.jpg") ;
+    background-size:cover;
+    margin: 0;
+    
+}
+
+ul{
+    margin-top: 0;
+    list-style-type: none;
+    padding: 0;
+
+    text-align: center;
+}
+
+
+li:hover{
+    cursor: pointer;
+    background-color: blanchedalmond    ;
+}
+
+ul :nth-child(1){
+    margin-top: 0;
+}
+
+nav{    
+    font-size: 2em;
+    width: 20%;
+    height: 100vh;
+    background-color: rgba(255, 235, 205, 0.614);
+    position: sticky;
+    top: 0;
+    left: 0;
+    
+}
+
+a{
+    padding-top: 0.2em;
+    color: rgb(98, 107, 114);
+    opacity: 100%;
+    text-decoration: none;
+    width: 100%;
+    display: block;
+
+
+}
+
+#active{
+
+    background-color: blanchedalmond    ;
+
+
+}
+
+div{
+    position: fixed;
+    top: 0;
+    left: 50%;
+    height: 100vh;
+    width: 80%;
+    text-align: center;
+    left: 20%;
+}
+h1{
+    font-size: 3em;
+}
