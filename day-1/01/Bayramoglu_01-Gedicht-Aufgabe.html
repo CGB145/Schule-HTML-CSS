@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gedicht</title>
+    <script>
+
+        document.addEventListener("DOMContentLoaded", function (event) {
+
+            for (let i = 1; i < 8; i++) {
+                console.log(i);
+                document.getElementById(`Gedicht${i}`).style.opacity = 100;
+                document.getElementById(`Gedicht${i}`).style.transition = "1s";
+                document.getElementById(`Gedicht${i}`).style.transitionDelay = `${5.2 * i}s`;
+            }
+
+
+
+        });
+
+    </script>
+    <style>
+
+        body{
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            overflow: hidden;
+            background-color: #fafafa;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 3rem;
+            margin-top: 5rem;   
+        }
+        #Gedicht1, #Gedicht2, #Gedicht3, #Gedicht4, #Gedicht5, #Gedicht6, #Gedicht7{
+            font-size: 2rem;
+            margin-top: -1rem;
+            text-align: center;
+            opacity: 0;
+        }
+
+        #div1{
+
+            border: 1em solid #333;
+            height: 95vh;
+
+        }
+        
+        #div2{
+            margin-top: 5rem;
+            margin-bottom: 5rem;
+            margin-left: 5%;
+            margin-right: 5%;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div id="div1">
+        <h1>Gedicht</h1>
+        <div id="div2">
+            <p id="Gedicht1">
+                HTML und CSS sind zwei Freunde, die eng miteinander verbunden sind, sie arbeiten Hand in Hand, um Webseiten zu
+                erstellen, so geschwind.
+            </p>
+            <p id="Gedicht2">
+                HTML ist der Baumeister, der das Grundgerüst der Seite legt, Er erstellt die Struktur und den Inhalt, damit der
+                Nutzer nicht verirrt geht.
+            </p>
+            <p id="Gedicht3">
+                Mit HTML können wir Links setzen, Bilder und Videos einbetten, Listen und Tabellen erstellen, all dies können
+                wir mit HTML betten.
+            </p>
+            <p id="Gedicht4">
+                CSS ist der Designer, der die Seite schöner macht, Er verleiht der Seite Farbe und Form, damit sie nicht
+                langweilig und trist wirkt.
+            </p>
+            <p id="Gedicht5">
+                CSS kann den Hintergrund gestalten, die Schriftart und Größe ändern, Ränder und Abstände definieren, so können
+                wir die Seite verschönern.
+            </p>
+            <p id="Gedicht6">
+                HTML und CSS arbeiten zusammen, um eine großartige Webseite zu schaffen, HTML legt die Struktur und den Inhalt
+                fest, CSS verleiht der Seite Ästhetik und Wohlklang.
+            </p>
+            <p id="Gedicht7">
+                So verwenden wir HTML und CSS, um die Welt des Webs zu gestalten, Eine Welt voller Farbe und Form, die uns
+                fasziniert und begeistert jeden Tag.
+            </p>
+        </div>
+    </div>
+
+</body>
+</html>

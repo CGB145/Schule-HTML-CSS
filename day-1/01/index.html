@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Irgendwas Erst Stunde</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+    <style>
+        body {
+            overflow-x: hidden;
+            background-color: #fafafa;
+        }
+
+        .TopNav {
+            overflow: hidden;
+            background-color: #333;
+            top: 0;
+            width: 100%;
+            z-index: 999;
+        }
+
+        .TopNav a {
+            float: left;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 3rem;
+        }
+
+        .TopNav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .TopNav a.active {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        .Paragraph {
+            text-align: center;
+        }
+
+        .Paragraph2{
+
+            font-size: 2rem;
+            width: 70%;
+            margin-left: 15%;
+            margin-right: 15%;
+            margin-bottom: 3rem;
+
+        }
+
+        h2 {
+            margin-top: 5rem;
+            text-align: center;
+            
+        }
+        h4,h3{
+            text-align: center;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+
+
+        }
+        span:hover{
+
+            cursor: pointer;
+
+        }
+
+        #ball{
+
+            position: absolute;
+
+        }
+
+        @media screen and (max-width: 600px) {
+            * {
+                font-size: 1.5rem;
+            }
+
+            .TopNav a {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+
+<body style="font-size: 3rem; margin: 0; display: initial; height: 2000px;">
+    <div style="position: fixed; bottom: 20px; right: 20px; z-index: 999; ">
+        <a href="#top"
+            style="display: block; padding: 1em; color: #fff; text-decoration: none; text-align: center;background-color: grey ; border-radius: 100%; width: 3rem; height: 3rem; opacity: 50%;">
+            ^ </a>
+    </div>
+
+    <div class="TopNav" style="background-color: grey; ">
+        <a href="#Umlaute" style=" color: white;">Umlaute</a>
+        <a href="#Absätze" style=" color: white;">Absätze</a>
+        <a href="#Title" style=" color: white;"> Überschrift </a>
+        <a href="#Inline" style=" color: white;"> Inline</a>
+        <a href="#TextFormatierung"> Formatierung </a>
+
+    </div>
+
+    <div onclick="move(this)" id="ball1" style="height: 3rem; width: 3rem; background-color: blue; border-radius: 100%;">
+    </div>
+
+    <div>
+        <h2 id="Umalaute" style="text-align: center;">Umlaute und Sonderzeichen</h2>
+        <p class="Paragraph">Ä, Ö, Ü, ä, ö, ü, ß, ©</p>
+        <!-- für alte browser -->
+        <p class="Paragraph"> &Auml;, &Ouml;, &Uuml;, &auml;, &ouml;, &uuml;, &szlig;, &copy; </p>
+    </div>
+
+    <div>
+        <h2 id="Absätze">Absätze</h2>
+        <p class="Paragraph" style="line-height: 2em;"> ein p-element leitet einen neuen absatz ein. dieses element ist
+            ein blockelement
+            und hat regelmäßig einen automatischen zeilenabstand </p>
+    </div>
+
+    <div>
+        <h2 id="Title">Überschrift</h2>
+        <p class="Paragraph"> Die meisten elemente sind blockement. Beginnen meistens eine neue zeile und haben 100%
+            width </p>
+    </div>
+
+    <div>
+        <h2 id="Inline">Inline Elemente</h2>
+        <p class="Paragraph"> Mit einer Inlineformatierung können einzelne Tags in HTML gestaltet werden. In diesem
+            Beispiel wird dem
+            P-Element eine HintergrunfFarbe zugewiesen. Eine Inlineformatierung muss immer im öffnenden Tag
+            hineingeschrieben werden </p>
+    </div>
+
+    <div>
+
+        <h2 id="TextFormatierung">Textformatierung</h2>
+
+        <h3>Absatzausrichten</h3>
+
+        <h4>Zentriert</h4>
+        <p class="Paragraph2" style="text-align: center;">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, nulla eos? Error
+            fugiat modi, reiciendis qui repellendus ducimus molestias recusandae. Libero architecto voluptate recusandae molestias
+            officia, eum quo quidem assumenda. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, nulla eos? Error
+            fugiat modi, reiciendis qui repellendus ducimus molestias recusandae. Libero architecto voluptate recusandae molestias
+            officia, eum quo quidem assumenda.
+        </p>
+        <h4>Linksbündig</h4>
+        <p class="Paragraph2" style="text-align: left;">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, nulla eos? Error
+            fugiat modi, reiciendis qui repellendus ducimus molestias recusandae. Libero architecto voluptate recusandae molestias
+            officia, eum quo quidem assumenda. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, nulla eos? Error
+            fugiat modi, reiciendis qui repellendus ducimus molestias recusandae. Libero architecto voluptate recusandae molestias
+            officia, eum quo quidem assumenda.
+        </p>
+        <h4>Rechtsbündig</h4>
+        <p class="Paragraph2" style="text-align: right;letter-spacing: 0.5rem;"> 
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, nulla eos? Error
+            fugiat modi, reiciendis qui repellendus ducimus molestias recusandae. Libero architecto voluptate recusandae molestias
+            officia, eum quo quidem assumenda. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, nulla eos? Error
+            fugiat modi, reiciendis qui repellendus ducimus molestias recusandae. Libero architecto voluptate recusandae molestias
+            officia, eum quo quidem assumenda.
+        </p>
+        <h4>Blocksatz</h4>
+        <p class="Paragraph2" style="text-align: justify;text-transform:uppercase;"> 
+            <span style="text-decoration: underline; font-weight: bold;">Lorem</span> ipsum dolor sit amet consectetur adipisicing elit. Voluptates, nulla eos? Error
+            fugiat modi, reiciendis qui repellendus ducimus molestias recusandae. Libero architecto voluptate recusandae molestias
+            officia, eum quo quidem assumenda. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, nulla eos? Error
+            fugiat modi, reiciendis qui repellendus ducimus molestias recusandae. Libero architecto voluptate recusandae molestias
+            officia, eum quo quidem assumenda.
+        </p>
+
+
+    </div>
+
+</body>
+
+</html>
