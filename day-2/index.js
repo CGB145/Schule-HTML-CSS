@@ -342,22 +342,20 @@ document.addEventListener("DOMContentLoaded", function (event) {
         
 
         if (event.keyCode === 39) { 
-            if(once == true){
-
-                bodyCurrentColumn = currentColumn -1;
-                bodyCurrentRow = currenRow;
-                once=false;
-            }
             // if (bodyCurrentColumn == 0) {
             //     bodyCurrentColumn = 10;
             // }
             if (currentColumn == 9 ) {
                 currentColumn = -1;
             }
-            if (bodyCurrentColumn == 9) {
+            bodyCurrentColumn = currentColumn;
+            if(bodyCurrentColumn < 0){
+                bodyCurrentColumn = bodyCurrentColumn +10;
+            }
+
+            if (bodyCurrentColumn == 10) {
                 bodyCurrentColumn = -1;
             }
-            bodyCurrentColumn = bodyCurrentColumn + 1;
 
 
             rightPressed = true
