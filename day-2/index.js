@@ -349,6 +349,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
                 currentColumn = -1;
             }
             bodyCurrentColumn = currentColumn;
+            bodyCurrentRow = currenRow;
             if(bodyCurrentColumn < 0){
                 bodyCurrentColumn = bodyCurrentColumn +10;
             }
@@ -380,6 +381,14 @@ document.addEventListener("DOMContentLoaded", function (event) {
             if (currentColumn == 0) {
                 currentColumn = 10;
             }
+            bodyCurrentColumn = currentColumn;
+            bodyCurrentRow = currenRow;
+
+            if (bodyCurrentColumn >= 10) {
+                bodyCurrentColumn = bodyCurrentColumn - 10;
+            }
+
+
             currentColumn = currentColumn - 1;
             leftPressed = true
             rightPressed = false
@@ -389,12 +398,20 @@ document.addEventListener("DOMContentLoaded", function (event) {
             snakeHead.style.backgroundColor = "green";
             snakeHead = document.getElementById(`block${currenRow}${currentColumn}`);
             snakeHead.style.backgroundColor = "darkgreen";
+            snakeBody.style.backgroundColor = "green";
+            snakeBody = document.getElementById(`block${bodyCurrentRow}${bodyCurrentColumn}`);
+            snakeBody.style.backgroundColor = "darkgreen";
+            
 
 
     
     
         }
         if (event.keyCode === 38) {
+            
+            bodyCurrentColumn = currentColumn;
+            bodyCurrentRow = currenRow;
+
 
             if(currenRow == 0){
                 currenRow = 10;
@@ -409,6 +426,9 @@ document.addEventListener("DOMContentLoaded", function (event) {
             snakeHead.style.backgroundColor = "green";
             snakeHead = document.getElementById(`block${currenRow}${currentColumn}`);
             snakeHead.style.backgroundColor = "darkgreen";
+            snakeBody.style.backgroundColor = "green";
+            snakeBody = document.getElementById(`block${bodyCurrentRow}${bodyCurrentColumn}`);
+            snakeBody.style.backgroundColor = "darkgreen";
 
             
     
@@ -416,19 +436,32 @@ document.addEventListener("DOMContentLoaded", function (event) {
         }
         if (event.keyCode === 40) {
 
+            bodyCurrentColumn = currentColumn;
+            bodyCurrentRow = currenRow;
+
             if(currenRow == 9){
                 currenRow = -1;
             }
-
+            // if (bodyCurrentRow <= 0) {
+            //     bodyCurrentRow = bodyCurrentRow + 10;
+            // }
+            
             downPressed = true
             upPressed = false
             leftPressed = false
             rightPressed = false
 
+            
             currenRow = currenRow + 1;
+            
             snakeHead.style.backgroundColor = "green";
             snakeHead = document.getElementById(`block${currenRow}${currentColumn}`);
             snakeHead.style.backgroundColor = "darkgreen";
+            
+            snakeBody.style.backgroundColor = "green";
+            snakeBody = document.getElementById(`block${bodyCurrentRow}${bodyCurrentColumn}`);
+            snakeBody.style.backgroundColor = "darkgreen";
+            
 
             
             
