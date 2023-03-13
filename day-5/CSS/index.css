@@ -2,6 +2,8 @@ body{
     margin: 0;
 }
 
+/* eine id wird mit einer raute geschrieben, also #wrapper */
+
 #wrapper{
 
     background-color: cornsilk;
@@ -9,7 +11,7 @@ body{
     width: 960px;
     margin: 0px auto;
     border-left: 1px solid black;
-    border-right: 10px solid black;
+    border-right: 1px solid black;
 }
 
 
