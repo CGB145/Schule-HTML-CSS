@@ -1,0 +1,15 @@
+body{
+
+    margin: 0;
+    background-color: bisque;
+
+}
+
+#wrapper{
+
+    width: 960px;
+    min-height: 400px;
+    background-color: tomato;
+    margin: 50px auto;
+
+}
