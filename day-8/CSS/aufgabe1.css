@@ -231,7 +231,7 @@ nav p{
     justify-content: center;
     align-items: center;
     border-radius: 10px;
-
+    background-color: red;
 
 
 
@@ -240,30 +240,17 @@ nav p{
 }
 
 #firstRow a{
-    padding: 1em 3em;
-    background-color: red;
-    border-radius: 10px;
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
+
+    padding: 1em 3.2em;
 
 }
 
-#firstRow a:hover{
-
-    width: 100%;
-    height: 100%;
-
-    background-color: wheat;
-    color: red;
-
-}
 
 #secondRow{
     margin-top: 1em;
     height: 50%;
     width: 30%;
-
+    background-color: rgb(255, 0, 0);
     color: white;
     display: flex;
     flex-direction: column;
@@ -271,27 +258,6 @@ nav p{
     align-items: center;
     border-radius: 10px;
 
-
-}
-
-
-#secondRow a{
-    padding: 1em 3em;
-    background-color: red;
-    border-radius: 10px;
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
-
-}
-
-#secondRow a:hover{
-
-    width: 100%;
-    height: 100%;
-
-    background-color: wheat;
-    color: red;
 
 }
 
