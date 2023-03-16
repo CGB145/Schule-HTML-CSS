@@ -159,18 +159,20 @@ nav p{
     margin: 0 1em;
     height: 25vh;
     width: 30%;
-    background-color: rgb(224, 224, 224);
+    background-color: rgb(243, 243, 243);
     display: flex;
     flex-wrap: wrap;
     padding: 0.5em;
     border-radius: 2%;
-    box-shadow: 0 0 10px 0 rgba(0,0,0,0.2);
+    box-shadow: 1px 1px 0px 1px rgba(0, 0, 0, 0.164);
 }
 
 .box p{
 
     margin: 0.2em 0;
     width: 100%;
+    font-size: 1.2em;
+    font-weight: 600;
 
 }
 
@@ -225,5 +227,14 @@ a:hover{
 
     color: wheat;
 
+
+}
+
+
+#randomText{
+    font-size: 1.2em;
+    font-weight: 600;
+    margin-bottom: 3em;
+    margin-top: 0;
 
 }
