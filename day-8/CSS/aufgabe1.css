@@ -173,7 +173,7 @@ nav p{
 }
 
 .content{
-    width: 80%;
+    width: 70%;
     margin: 0 auto;
 }
 
@@ -225,13 +225,13 @@ nav p{
 
     height: 100%;
     width: 30%;
-    background-color: rgb(255, 0, 0);
     color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     border-radius: 10px;
+
 
 
 
@@ -239,11 +239,31 @@ nav p{
 
 }
 
+#firstRow a{
+    padding: 1em 3em;
+    background-color: red;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+
+}
+
+#firstRow a:hover{
+
+    width: 100%;
+    height: 100%;
+
+    background-color: wheat;
+    color: red;
+
+}
+
 #secondRow{
     margin-top: 1em;
     height: 50%;
     width: 30%;
-    background-color: rgb(255, 0, 0);
+
     color: white;
     display: flex;
     flex-direction: column;
@@ -251,6 +271,27 @@ nav p{
     align-items: center;
     border-radius: 10px;
 
+
+}
+
+
+#secondRow a{
+    padding: 1em 3em;
+    background-color: red;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+
+}
+
+#secondRow a:hover{
+
+    width: 100%;
+    height: 100%;
+
+    background-color: wheat;
+    color: red;
 
 }
 
@@ -260,7 +301,7 @@ nav p{
     width: 100%;
     height: 50vh;
     display: flex;
-    margin-top: 1em;
+    margin-top: 2em;
     justify-content: center;
     flex-wrap: wrap;
 
@@ -309,22 +350,31 @@ nav p{
 
 .buchen{
 
-    height: 3em;
-    background-color: red;
-    border-radius: 10%;
+
+
     display: flex;
     justify-content: center;
     align-items: center;
-
+    background-color: red;
+    border-radius: 5%;
+    height: fit-content;
+    width: fit-content;
 
 }
 
 .buchen a{
-
     color: white;
     text-decoration: none;
     padding: 1em 1em;
     border-radius: 3%;
+
+}
+
+.buchen a:hover{
+
+
+    background-color: wheat;
+    color: red;
 
 }
 
@@ -347,6 +397,13 @@ nav p{
 
 }
 
+#angebot p{
+
+    font-size: 2.4em;
+    margin-top: 2em;
+
+}
+
 a:hover{
 
     color: wheat;
@@ -362,3 +419,5 @@ a:hover{
     margin-top: 0;
 
 }
+
+
