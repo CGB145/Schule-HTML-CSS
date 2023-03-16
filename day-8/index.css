@@ -1,0 +1,229 @@
+
+
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    
+}
+
+nav{
+
+    height: 10vh;
+    display: flex;
+    background-color: rgb(46, 46, 46);
+    color: white;
+    align-items: center;    
+    position: static;
+    top: 0;
+    left: 0;
+
+
+
+}
+
+nav ul{
+
+    list-style: none;
+    display: flex;
+    margin-left: auto;
+
+}
+
+nav li{
+
+    margin: 1em;
+    background-color: red;
+    padding: 0.5em 1em;
+    border-radius: 10%;
+}
+
+nav a{
+
+    color: white;
+    text-decoration: none;
+
+}
+
+nav p{
+    margin-left: 1em;
+}
+
+.content{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.titel{
+
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.titel p{
+
+    margin-right: auto;
+
+}
+
+.firstBoxes{
+
+    width: 100%;
+    height: 10vh;
+    
+
+}
+
+.firstBoxes a{
+
+    padding: 1em;
+    color: white;
+    text-decoration: none;
+
+}
+
+
+
+#firstRow{
+    width: 100%;
+    display: flex;
+    height: 50%;
+    justify-content: space-between;
+
+
+}
+
+#firstRow div{
+
+
+    height: 100%;
+    width: 30%;
+    background-color: rgb(255, 0, 0);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+
+
+
+
+
+}
+
+#secondRow{
+    margin-top: 1em;
+    height: 50%;
+    width: 30%;
+    background-color: rgb(255, 0, 0);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+
+
+}
+
+
+.secondBoxes{
+
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    margin-top: 1em;
+    justify-content: center;
+    flex-wrap: wrap;
+
+
+}
+
+#thirdRow{
+
+    width: 100%;
+    height: 25vh;
+    display: flex;
+    margin-top: 1em;
+
+
+
+
+}
+
+.box{
+    margin: 0 1em;
+    height: 25vh;
+    width: 30%;
+    background-color: rgb(224, 224, 224);
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0.5em;
+    border-radius: 2%;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.2);
+}
+
+.box p{
+
+    margin: 0.2em 0;
+    width: 100%;
+
+}
+
+.box h3{
+
+    margin: 0.2em 0;
+    width: 100%;
+
+}
+
+.buchen{
+
+    height: 3em;
+    background-color: red;
+    border-radius: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.buchen a{
+
+    color: white;
+    text-decoration: none;
+    padding: 1em 1em;
+    border-radius: 3%;
+
+}
+
+
+
+#fourthRow{
+
+
+    width: 100%;
+    height: 25vh;
+    display: flex;
+    margin-top: 5em;
+
+}
+
+#angebot{
+
+    background-color: white;
+    box-shadow:rgb(255, 255, 255) 0px 0px 10px 0px;
+
+}
+
+a:hover{
+
+    color: wheat;
+
+
+}
