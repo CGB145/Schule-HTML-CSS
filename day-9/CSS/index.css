@@ -376,3 +376,10 @@ article button:hover{
 
 
 }
+
+#articles :nth-child(1){
+
+    box-shadow: 0 0 0 0;
+    text-align: left;
+
+}
