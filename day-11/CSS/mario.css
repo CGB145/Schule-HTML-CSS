@@ -1,0 +1,203 @@
+#frame{
+
+
+    height: 300px;
+    width: 600px;
+    margin: 25% auto;
+    position: relative;
+    overflow: hidden;
+
+
+}
+
+#background{
+    width: inherit;
+    height: inherit;
+}
+
+#background img{
+    scale: 1.2;
+    transform: translateY(60px);
+
+
+
+
+}
+
+#marioNormal{
+    background-image: url(../BILDER/SMB_Smallmario.webp);
+    background-size: 100% 100%;
+    position: absolute;
+    bottom: 30px;
+    height: 30px;
+    width: 30px;
+    background-repeat: no-repeat;
+    left: 0px;
+    animation: marioMove 6s linear 1 forwards;
+    z-index: 3;
+}
+
+#plant{
+
+    background-image: url(../BILDER/d482e5acfdf88c6.png);
+    background-size: 100% 100%;
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    z-index: 3;
+    background-repeat: no-repeat; 
+    position: absolute;
+    bottom: 70px;
+    left: 200px;
+    animation: plant 6s linear 1 forwards;
+    opacity: 0%;
+
+}
+
+#fire{
+
+    background-image: url(../BILDER/hqdefault-2310609356.png);
+    background-size: 100% 100%;
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    z-index: 3;
+    background-repeat: no-repeat;
+    bottom: 100px;
+    left: 600px;
+    transform: rotate(180deg);
+    animation: fire 6s linear;
+
+}
+
+@keyframes fire {
+    0%{
+        left: 600px;
+    }
+    90%{
+        left: 600px;
+    }
+    100%{
+        left: 300px;
+    }
+    
+}
+
+@keyframes plant {
+
+    0%{
+        display: none;
+        bottom: 40px;
+        opacity: 0%;
+    }
+    5%{
+        bottom: 70px;
+        opacity: 100%;
+    }
+    15%{
+        bottom: 70px;
+    }
+    20%{
+        bottom: 40px;
+        display: none;
+        
+    }
+    21%{
+        opacity: 0%;
+
+    }
+    100%{
+        bottom: 40px;
+        display: none;
+    }
+    
+}
+
+@keyframes backgroundMove{
+
+    0%{
+        
+    }
+
+}
+
+
+@keyframes marioMove {
+
+    0%{
+        background-image: url(../BILDER/Small_Mario_Walk_SMB.gif);
+
+        left: 0;
+        bottom: 30px;
+    }
+    23%{
+        background-image: url(../BILDER/Small_Mario_Walk_SMB.gif);
+
+    }
+    24%{
+        background-image: url(../BILDER/SMB_Small_Mario_Jumping_Sprite.webp);
+        bottom: 30px;
+    }
+    29%{
+        bottom: 70px;
+    }
+    38%{
+        bottom: 70px;
+    }
+    39%{
+        bottom: 30px;
+    }
+
+    54%{
+
+        background-image: url(../BILDER/Small_Mario_Walk_SMB.gif);
+
+    }
+    60%{
+        bottom: 30px;
+        background-image: url(../BILDER/SMB_Small_Mario_Jumping_Sprite.webp);
+    }
+    61%{
+        background-image: url(../BILDER/Small_Mario_Walk_SMB.gif);
+
+        bottom: 90px;
+    }
+    69%{
+        bottom: 90px;
+
+    }
+    70%{
+        bottom: 30px;
+    }
+    82%{
+        background-image: url(../BILDER/Small_Mario_Walk_SMB.gif);
+
+    }
+    88%{
+        background-image: url(../BILDER/SMB_Small_Mario_Jumping_Sprite.webp);
+
+        bottom:30px ;
+    }
+    89%{
+        background-image: url(../BILDER/Small_Mario_Walk_SMB.gif);
+
+        bottom: 110px;
+    }
+    94%{
+        bottom: 110px;
+    }
+    95%{
+        bottom: 30px;
+    }
+    97%{
+        background-image:url(../BILDER/SMB_NES_Mario_Death_Sprite.png) ;
+    }
+    100%{
+
+
+        bottom: 0px;
+        left: 100%;
+
+    }
+    
+}
