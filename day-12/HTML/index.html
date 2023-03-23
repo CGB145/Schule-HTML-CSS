@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulare</title>
+    <link rel="stylesheet" href="../CSS/index.css">
+</head>
+
+<body>
+
+
+    <section>
+
+
+        <form action="send.py" method="post">
+
+            <fieldset id="one">
+
+                <legend>Persönliche Anschrift</legend>
+                <select name="Anrede" id="">
+                    <option value=""> Bitte Wählen</option>
+                    <option value=""> Herr </option>
+                    <option value=""> Frau </option>
+                    <option value=""> Hund </option>
+                    <option value=""> Katze </option>
+                    <option value=""> Maus </option>
+                    <option value=""> Du Hurensohn </option>
+                </select>
+                <label for="vorName">Vorname: <input type="text" placeholder="Name" id="vorName"> </label>
+                <label for="name">Nachname: <input type="text" placeholder="Nachname" id="name"> </label>
+                <label for="strasse">Straße: <input type="text" placeholder="Adresse" id="strasse"> </label>
+                <label for="plz">PLZ: <input type="text" placeholder="PLZ" id="plz"> </label>
+                <label for="ort">Ort: <input type="text" placeholder="Ort" id="ort"> </label>
+                <label for="tel">Telefon: <input type="tel" placeholder="Telefon" id="tel"
+                        pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"> </label>
+                <p></p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Nachricht</legend>
+
+                <textarea name="nachricht" id="nachricht" cols="46" rows="5"></textarea>
+
+            </fieldset>
+
+            <fieldset id="three">
+                <legend>Zahlungsart</legend>
+                <div>
+                    <label for="visa"><input type="radio" name="paymentMethod" id="visa" value="visa"> Visa</label>
+                    <label for="masterCard"><input type="radio" name="paymentMethod" id="masterCard" value="masterCard">
+                        Mastercard</label>
+                    <label for="sofort"><input type="radio" name="paymentMethod" id="sofort" value="sofort">
+                        Sofort</label>
+                </div>
+            </fieldset>
+
+            <fieldset id="four">
+                <legend>Werbung</legend>
+
+                <div>
+                    <label for="newsletter"> <input type="checkbox" name="newsletter" value="news-true">Newsletter</label>
+                    <label for="abo"> <input type="checkbox" name="abo" value="abo-true">Abo</label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <button type="reset"> Reset </button>
+                <button type="submit"> Zahlungspflichtig betellen </button>
+            </fieldset>
+
+        </form>
+
+
+    </section>
+
+
+</body>
+
+</html>
