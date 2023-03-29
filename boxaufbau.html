@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Big Title</title>
+    <style>
+        #topNav {
+
+            display: flex;
+            height: fit-content;
+            margin: 1em;
+            background-color: blue;
+            overflow: hidden;
+
+        }
+
+        #topNav ul {
+
+            display: flex;
+            list-style: none;
+            align-items: center;
+            height: fit-content;
+
+
+        }
+
+        #topNav a {
+
+            color: white;
+            padding: 1em;
+            text-decoration: none;
+
+        }
+
+        #topNav a:hover {
+
+            background-color: burlywood;
+
+        }
+
+        #wrapper {
+            width: 100vw;
+        }
+
+        #secondList {
+
+            margin-left: auto;
+            margin-right: 1em;
+
+        }
+
+        #secondList li {
+
+            padding-left: 0.5em;
+            color: white;
+        }
+
+        #firstBox {
+            background-color: rgba(205, 233, 250, 0.808);
+            width: 100vw;
+            height: 70vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        #firstBox article {
+
+            width: 50vw;
+            text-align: center;
+
+
+
+        }
+
+        #secondBox {
+            margin-top: 1em;
+            display: flex;
+            gap: 1em;
+
+
+
+        }
+
+        #secondBox article {
+            background-color: rgba(205, 233, 250, 0.808);
+            width: 50vw;
+            box-sizing: border-box;
+            padding: 2em;
+
+
+        }
+
+
+        #name {
+
+            display: flex;
+            align-items: center;
+
+        }
+
+        #thirdBox {
+
+            background-color: rgba(205, 233, 250, 0.808);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 1em;
+
+
+        }
+
+        #thirdBoxWrapper {
+
+            width: 100%;
+
+            height: 60vh;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+
+        }
+
+        #thirdBox article {
+
+            width: 20%;
+
+
+        }
+
+        #thirdBox ul {
+
+            display: flex;
+            justify-content: space-between;
+            list-style: none;
+
+        }
+
+        #thirdBox a {
+            color: blue;
+            text-decoration: none;
+        }
+
+        #downArrow {
+            display: flex;
+            font-size: 2em;
+            background-color: blue;
+            color: white;
+            width: 100px;
+            height: 100px;
+            border-radius: 100%;
+            justify-content: center;
+            margin-bottom: 1em;
+        }
+
+        #fourthBox {
+            margin-top: 5em;
+            width: 100%;
+            height: 30vh;
+            display: flex;
+            justify-content: center;
+        }
+
+        #fourthBoxDiv1 {
+            background-color: rgba(205, 233, 250, 0.808);
+            width: 70%;
+            height: 30vh;
+            display: flex;
+        }
+
+        #fourthBoxDiv2 {
+            background-color: rgba(114, 201, 255, 0.808);
+            width: 30%;
+
+
+        }
+
+        #fourthBoxDiv3 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 0 5em;
+
+            width: 70%;
+            box-sizing: border-box;
+
+        }
+
+        #fourthBoxButtons :nth-child(1) {
+
+            border: blue 1px solid;
+            color: blue;
+            padding: 0.5em 3em;
+            text-decoration: none;
+            border-radius: 0.3em;
+
+
+
+        }
+
+        #fourthBoxButtons :nth-child(2) {
+
+            background-color: blue;
+            color: white;
+            padding: 0.5em 3em;
+            text-decoration: none;
+            border-radius: 0.3em;
+
+
+        }
+
+        footer {
+
+            display: flex;
+            background-color: blue;
+            margin-top: 5em;
+            align-items: center;
+            height: 20vh;
+            padding: 0 1em;
+            box-sizing: border-box;
+
+
+        }
+
+        #footer1 p,
+        #footer2 p,
+        #footer3 p,
+        #footer1 h5,
+        #footer2 h5,
+        #footer3 h5 {
+            color: white;
+        }
+
+        #footerFlex{
+            display: flex;
+            width: 70%;
+        }
+
+        #footerFlex article{
+            width: 33%;
+        }
+
+        #footerIcons{
+            width: 30%;
+
+        }
+
+
+        #footerIcons ul{
+
+            list-style: none;
+            display: flex;
+            gap: 1em;
+
+            
+
+            
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav id="topNav">
+        <ul>
+            <li><a href="#"> Feed </a></li>
+            <li><a href="#"> Authors </a></li>
+            <li><a href="#"> Explore </a></li>
+            <li><a href="#"> Blog </a></li>
+            <li><a href="#"> Contact </a></li>
+        </ul>
+
+        <ul id="secondList">
+            <li><img src="" alt="">Icon 1</li>
+            <li><img src="" alt="">Icon 2</li>
+        </ul>
+    </nav>
+
+    <div id="wrapper">
+
+
+        <section id="firstBox">
+
+            <article>
+                <h1>Big Title</h1>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. In officia iusto eum ratione minus nulla
+                    aperiam quidem et at! Laboriosam, sit illo.
+                    Aut recusandae numquam ratione harum fugit beatae explicabo.
+                </p>
+
+
+            </article>
+
+        </section>
+
+        <section id="secondBox">
+            <article id="secondBoxArticle1">
+
+                <img src="" alt="">Bild
+                <h3>Lorem Ipsum Dolor Amet Consectetuer</h3>
+                <p>by Name Surname</p>
+
+            </article>
+
+            <article id="secondBoxArticle2">
+
+                <h3>Lorem Ipsum</h3>
+                <h2>Excepteur sint occaeuiecat.</h2>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam placeat nostrum fugiat. Obcaecati
+                    quo
+                    aut rem consectetur, nobis numquam quibusdam quis debitis consequatur molestiae libero odio ex
+                    porro,
+                    iusto labore!
+                </p>
+
+                <div id="name">
+                    <div>
+                        <p>Icon</p>
+                    </div>
+
+                    <div>
+
+                        <h3>Name Surname</h3>
+                        <p>Founder & Ceo</p>
+                    </div>
+
+                </div>
+
+
+            </article>
+        </section>
+
+        <section id="thirdBox">
+
+            <div id="thirdBoxWrapper">
+
+                <article id="thirdBoxArticle1">
+
+                    <div>
+                        <p>Bild</p>
+                    </div>
+
+                    <h3>Name Surname</h3>
+                    <h6>Co-Founder & CTO</h6>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus aspernatur perferendis
+                    </p>
+                    <ul>
+                        <li><a href="">Insta</a></li>
+                        <li><a href="">Twiiter</a></li>
+                        <li><a href="">Facebook</a></li>
+                        <li><a href="">Web</a></li>
+
+                    </ul>
+
+                </article>
+
+                <article id="thirdBoxArticle2">
+
+                    <div>
+                        <p>Bild</p>
+                    </div>
+
+                    <h3>Name Surname</h3>
+                    <h6>Co-Founder & CTO</h6>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus aspernatur perferendis
+                    </p>
+                    <ul>
+                        <li><a href="">Insta</a></li>
+                        <li><a href="">Twiiter</a></li>
+                        <li><a href="">Facebook</a></li>
+                        <li><a href="">Web</a></li>
+
+                    </ul>
+
+                </article>
+
+                <article id="thirdBoxArticle3">
+
+                    <div>
+                        <p>Bild</p>
+                    </div>
+
+                    <h3>Name Surname</h3>
+                    <h6>Co-Founder & CTO</h6>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus aspernatur perferendis
+
+                    </p>
+                    <ul>
+                        <li><a href="">Insta</a></li>
+                        <li><a href="">Twiiter</a></li>
+                        <li><a href="">Facebook</a></li>
+                        <li><a href="">Web</a></li>
+
+                    </ul>
+
+                </article>
+
+            </div>
+
+            <nav id="downArrow">
+
+                <p>V</p>
+
+            </nav>
+
+        </section>
+
+
+        <section id="fourthBox">
+
+            <div id="fourthBoxDiv1">
+
+                <div id="fourthBoxDiv2">
+
+                </div>
+                <div id="fourthBoxDiv3">
+                    <h2>Expecteur sint occaecat cupid atat non proident?</h2>
+                    <div id="fourthBoxButtons">
+                        <a href=""> More</a>
+                        <a href=""> Lets Try</a>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <footer>
+
+            <div id="footerFlex">
+
+
+                <article id="footer1">
+                    <h5>Start a Project</h5>
+                    <p>We are ready forn the Challange</p>
+                    <p>aadsas@maiö.com</p>
+
+                </article>
+
+                <article id="footer2">
+                    <h5>say hello</h5>
+                    <p>497 Evergreen Rd. Roseville, CA 95678</p>
+                    <p>+44 345 678 903</p>
+
+                </article>
+
+                <article id="footer3">
+
+                    <h5>Jobs</h5>
+                    <p>We are always looking for talent</p>
+                    <p>dhaisu@mail.com</p>
+
+                </article>
+            </div>
+
+            <div id="footerIcons">
+
+                <ul>
+                    <li>Insta</li>
+                    <li>Twitter</li>
+                    <li>Facebook</li>
+                </ul>
+
+            </div>
+
+        </footer>
+
+
+    </div>
+
+</body>
+
+</html>

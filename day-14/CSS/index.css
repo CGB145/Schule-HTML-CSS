@@ -1,0 +1,24 @@
+*{
+
+  margin: 0;
+  padding: 0;
+}
+
+body{
+
+  background-color: blue;
+
+}
+
+
+
+
+
+#wrapper{
+
+  width: 800px;
+  min-height: 500px;
+  margin: 50px auto;
+  background-color: white;
+
+}
