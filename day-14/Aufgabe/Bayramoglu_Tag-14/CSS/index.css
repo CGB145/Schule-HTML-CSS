@@ -70,6 +70,7 @@ section{
     
     display: flex;
     width: 100%;
+    height: fit-content;
     gap: 3em;
 }
 
@@ -81,13 +82,12 @@ h1{
     width: 30%;
     overflow: hidden;
 
-
 }
 
 #firstImage{
 
     min-width:100%;
-    max-height: 40vh;
+    max-height: 60vh;
     object-fit: cover;
     object-position: center;
 
@@ -97,8 +97,9 @@ h1{
 #secondImage{
 
     min-width: 100%;
-    max-height: 70vh;
+    height: 100vh;
     object-fit: cover;
+    object-position: center;
 }
 
 .secondSection article{
@@ -213,7 +214,7 @@ footer nav ul{
 footer nav ul a{
 
     color: white;
-    padding: 3em;
+    padding: 4em 3em;
     text-decoration: none;
 
 }
@@ -228,7 +229,7 @@ footer nav ul a:hover{
 
     color: white;
     text-decoration: none;
-    padding: 3em;
+    padding: 4em 3em;
     background-color: #699fcc;
 
 }
@@ -306,6 +307,6 @@ footer nav ul a:hover{
         gap: 0;
     }
     footer nav ul a{
-        padding: 3em 1em;
+        padding: 4em 1em;
     }
 }
